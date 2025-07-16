@@ -44,7 +44,6 @@ export const ToDoList = () => {
 	};
 
 	const saveInlineEdit = (index) => {
-		if (!task.trim()) return;
 		const newList = [...list];
 		newList[index].text = task;
 		setList(newList);
